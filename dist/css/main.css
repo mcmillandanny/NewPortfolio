@@ -1,18 +1,3 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-0. Reset
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 0. Reset ================================= */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,141 +15,143 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+	display: block;
 }
 
 body {
-  line-height: 1;
+	line-height: 1;
 }
 
 ol, ul {
-  list-style: none;
+	list-style: none;
 }
 
 blockquote, q {
-  quotes: none;
+	quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+	content: '';
+	content: none;
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-body {
-  background: #ccc;
+header {
+	border: 1px solid blue;
 }
 
-/* 2. Content ================================= */
+header img {
+	display: block;
+	padding: 1em;
+	margin: auto;
+}
+
+header .nav {
+	display: flex;
+	justify-content: center;
+	padding: .4em;
+}
+
+header .nav li {
+	margin: .7em;
+	font-size: 1.3em;
+}
+
+header .nav a {
+	text-decoration: none;
+	font-family: "Oswald", sans-serif;
+}
+
 .content {
-  position: relative;
-  font-family: sans-serif;
-  width: 90%;
-  max-width: 500px;
-  margin: 140px auto;
-  padding: 30px 20px 30px 30px;
+	border: 1px solid red;
+	width: 100%;
 }
 
-.content .foreground {
-  position: relative;
-  z-index: 2;
-  -webkit-transform: translateZ(100px);
-  transform: translateZ(100px);
+.content .home-page {
+	text-align: center;
+	padding: .5em;
+	height: 80vh;
 }
 
-.content .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: white;
-  z-index: 1;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-transform: translateX(20px) perspective(600px) rotateY(15deg);
-  transform: translateX(20px) perspective(600px) rotateY(15deg);
+.content .home-page img {
+	display: block;
+	margin: auto;
+	margin-top: 1em;
 }
 
-.content:hover .background {
-  -webkit-transform: translateX(-30px) perspective(600px) rotateY(-15deg);
-  transform: translateX(-30px) perspective(600px) rotateY(-15deg);
+.content .home-page h1 {
+	font-size: 2em;
+	padding: .3em;
 }
 
-.content .logo {
-  position: absolute;
-  top: -30px;
-  width: 60px;
-  z-index: 2;
-  -webkit-transform: translateZ(100px);
-  transform: translateZ(100px);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.content .home-page h2 {
+	font-size: 1.5em;
+	padding: .3em;
 }
 
-.content .logo:hover {
-  -webkit-transform: rotate(-0.4turn);
-  -ms-transform: rotate(-0.4turn);
-  transform: rotate(-0.4turn);
+.content .home-page p {
+	font-size: 1.2em;
+	padding: .3em;
 }
 
-.content h1 {
-  font-weight: 700;
-  font-size: 22pt;
-  margin: 15px 0;
+.content .work-page, .content .about-page {
+	display: none;
 }
 
-.content p {
-  color: #777;
-  line-height: 140%;
+.content .left-btn, .content .right-btn {
+	display: inline-block;
+	position: relative;
 }
 
-.content p.github {
-  font-size: 0.8em;
+.content .arrow {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
 }
 
-.content p.github a {
-  opacity: 0.2;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.content .left {
+	transform: rotate(-135deg);
 }
 
-.content p.github a:hover {
-  opacity: 1;
-  color: red;
+.content .right {
+	transform: rotate(45deg);
 }
 
-.content code {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 0.8em;
-  opacity: 0.2;
+footer {
+	border: 1px solid orange;
+	width: 100%;
+}
+
+footer .social-icons {
+	display: flex;
+	justify-content: center;
+	padding: .5em;
+}
+
+footer .social-icons img {
+	margin: .5em;
 }
 
 /*# sourceMappingURL=main.css.map */

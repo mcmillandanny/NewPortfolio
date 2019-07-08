@@ -3,13 +3,110 @@
 @import 'reset';
 
 
-
+// ===============Variables============
+//Fonts
+$Oswald-Reg: 'Oswald', sans-serif;
 
 * {
 	box-sizing: border-box;
 }
 
-body {
-	background: #ccc;
+
+// ===================================Loading Page Styles======================
+header {
+	border: 1px solid blue;
+	img {
+		display: block;
+		padding: 1em;
+		margin: auto;
+	}
+	
+	.nav {
+		display: flex;
+		justify-content: center;
+		padding: .4em;
+
+		li {
+			margin: .7em;
+			font-size: 1.3em;
+		}
+
+		a {
+			text-decoration: none;
+			font-family: $Oswald-Reg;
+		}
+	}
+}
+
+
+.content {
+	border: 1px solid red;
+	width: 100%;
+
+	.home-page {
+		text-align: center;
+		padding: .5em;
+		height: 80vh;
+
+		img {
+			display: block;
+			margin: auto;
+			margin-top: 1em;
+		}
+
+		h1 {
+			font-size: 2em;
+			padding: .3em;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			padding: .3em;
+
+		}
+		p {
+			font-size: 1.2em;
+			padding: .3em;
+		}
+	}
+
+	.work-page, .about-page {
+		display: none;
+	}
+	.left-btn, .right-btn {
+		display: inline-block;
+		position: relative;
+	}
+
+	.arrow {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-top: 2px solid #000;
+		border-right: 2px solid #000;
+	  }
+
+	  .left {
+		  transform: rotate(-135deg);
+	  }
+	  .right {
+		  transform: rotate(45deg);
+	  }
+}
+
+footer {
+	border: 1px solid orange;
+	width: 100%;
+
+	.social-icons {
+		display: flex;
+		justify-content: center;
+		padding: .5em;
+
+
+		img {
+			margin: .5em;
+		}
+	}
 }
 
