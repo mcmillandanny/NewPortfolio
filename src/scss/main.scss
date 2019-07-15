@@ -44,9 +44,7 @@ header {
 	width: 100%;
 
 	.home-page {
-		text-align: center;
 		padding: .5em;
-		height: 80vh;
 
 		img {
 			display: block;
@@ -73,25 +71,6 @@ header {
 	.work-page, .about-page {
 		display: none;
 	}
-	.left-btn, .right-btn {
-		display: inline-block;
-		position: relative;
-	}
-
-	.arrow {
-		display: inline-block;
-		width: 15px;
-		height: 15px;
-		border-top: 2px solid #000;
-		border-right: 2px solid #000;
-	  }
-
-	  .left {
-		  transform: rotate(-135deg);
-	  }
-	  .right {
-		  transform: rotate(45deg);
-	  }
 }
 
 footer {

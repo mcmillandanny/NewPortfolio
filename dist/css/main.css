@@ -88,9 +88,7 @@ header .nav a {
 }
 
 .content .home-page {
-	text-align: center;
 	padding: .5em;
-	height: 80vh;
 }
 
 .content .home-page img {
@@ -116,27 +114,6 @@ header .nav a {
 
 .content .work-page, .content .about-page {
 	display: none;
-}
-
-.content .left-btn, .content .right-btn {
-	display: inline-block;
-	position: relative;
-}
-
-.content .arrow {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border-top: 2px solid #000;
-	border-right: 2px solid #000;
-}
-
-.content .left {
-	transform: rotate(-135deg);
-}
-
-.content .right {
-	transform: rotate(45deg);
 }
 
 footer {
