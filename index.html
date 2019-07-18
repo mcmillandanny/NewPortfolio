@@ -12,29 +12,33 @@
 	<body>
 		<header>
 			<img src="https://placeimg.com/100/100/animals" alt="logo">
-			<ul class="nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Skills</a></li>
-				<li><a href="#">Work</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
+			<div class="hamburger">
+				<div class="line-1 lines"></div>
+				<div class="line-2 lines"></div>
+				<div class="line-3 lines"></div>
+			</div>
+			<div class="overlay-nav">
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
 		</header>
 		<div class="content">
-			<div class="home-page">
-				<div class="home-wrap">
-					<div class="home-wrap">
-						<h1>DANIEL</h1>
-						<h1>MCMILLAN</h1>
-						<p>Front End Web Developer</p>			
-					</div>	
-					<div class="home-blurb">
-						<p>Lorem ipsum dolor sit amet, graeco accumsan pertinacia ut eum. 
-							Affert melius eleifend usu te, his nobis definiebas signiferumque cu, semper regione graecis usu ea. 
-							Ex libris senserit assentior vel, meis appetere definitionem ex vix, altera assueverit te per. Ne justo ignota vivendo sed. Eum ex amet feugiat, sit ut justo liberavisse, vis labores epicurei ne. 
-							Elit vituperata nam te.
-						</p>
-					</div>
-				</div>
+			<div class="hero-wrap">
+				<div class="name-wrap">
+					<h1 class="first-name">DANIEL</h1>
+					<h1 class="last-name">McMILLAN<span>.</span></h1>
+					<p>Front End</p> 
+					<p>Web Developer</p>
+				</div>	
+				<p>Lorem ipsum dolor sit amet, graeco accumsan pertinacia ut eum. 
+					Affert melius eleifend usu te, his nobis definiebas signiferumque cu, semper regione graecis usu ea. 
+					Ex libris senserit assentior vel, meis appetere definitionem ex vix, altera assueverit te per. Ne justo ignota vivendo sed. Eum ex amet feugiat, sit ut justo liberavisse, vis labores epicurei ne. 
+					Elit vituperata nam te.
+				</p>
 			</div>
 			<div class="skills-wrap">
 				<h1>Languages I speak</h1>
@@ -60,18 +64,26 @@
 					</div>		
 				</div>
 			</div>
-			<div class="about-me">
-				<h1></h1>
+			<div class="contact-wrapper">
+				<div class="contact-me">
+					<h1>CONTACT</h1>
+					<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+					<p>678-927-5980</p>
+					<a href="#">mcmillandanny@gmail.com</a>
+				</div>
+				<div class="social-icons">
+					<img src="https://via.placeholder.com/50" alt="Social Icon">
+					<img src="https://via.placeholder.com/50" alt="Social Icon">
+					<img src="https://via.placeholder.com/50" alt="Social Icon">
+				</div>
 			</div>
-		</div>
-		<footer>
-			<div class="social-icons">
-				<img src="https://placeimg.com/50/50/people" alt="logo">
-				<img src="https://placeimg.com/50/50/nature" alt="logo">
-				<img src="https://placeimg.com/50/50/animals" alt="logo">
-			</div>
-		</footer>
-		
+			<footer>
+				<div class="footer-wrap">
+					<img src="https://placeimg.com/50/50/people" alt="logo">
+					<p>Danny McMillan 2019</p>
+				</div>
+			</footer>
+		</div>		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 		<script src="dist/js/main.js"></script>
 

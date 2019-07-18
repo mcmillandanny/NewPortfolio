@@ -11,81 +11,99 @@ $Oswald-Reg: 'Oswald', sans-serif;
 	box-sizing: border-box;
 }
 
+body {
+	background: #ccc;
+}
+
 
 // ===================================Loading Page Styles======================
 header {
 	border: 1px solid blue;
 	img {
-		display: block;
+		display: inline-block;
 		padding: 1em;
-		margin: auto;
-	}
-	
-	.nav {
-		display: flex;
-		justify-content: center;
-		padding: .4em;
-
-		li {
-			margin: .7em;
-			font-size: 1.3em;
-		}
-
-		a {
-			text-decoration: none;
-			font-family: $Oswald-Reg;
-		}
-	}
-}
-
-
-.content {
-	border: 1px solid red;
-	width: 100%;
-
-	.home-page {
-		padding: .5em;
-
-		img {
-			display: block;
-			margin: auto;
-			margin-top: 1em;
-		}
-
-		h1 {
-			font-size: 2em;
-			padding: .3em;
-		}
-
-		h2 {
-			font-size: 1.5em;
-			padding: .3em;
-
-		}
-		p {
-			font-size: 1.2em;
-			padding: .3em;
-		}
 	}
 
-	.work-page, .about-page {
+	.hamburger {
+		float: right;
+		padding: 20px;
+		margin: 30px 0px;
+		cursor: pointer;
+		z-index: 10;
+
+		.line-1 {
+			width: 30px;
+			transform: translateX(15px);
+			height: 3px;
+			border-radius: 10px;
+			background-color: white;
+			margin: 6px 0;
+			transition: 0.3s; 
+		}
+
+		.line-2 {
+			width: 35px;
+			height: 3px;
+			transform: translateX(10px);
+			border-radius: 10px;
+			background-color: white;
+			margin: 6px 0;
+			transition: 0.3s;
+		}
+		
+		.line-3 {
+			width: 45px;
+			height: 3px;
+			border-radius: 10px;
+			background-color: white;
+			margin: 6px 0;
+			transition: .3s;
+		}
+
+		.change.line-1 {
+			width: 0px;
+		}
+
+		.change.line-2 {
+			width: 0px;
+		}
+
+		.change.line-3 {
+			width: 10px;
+		}
+	}
+
+	ul {
+		clear: both;
 		display: none;
 	}
 }
 
-footer {
-	border: 1px solid orange;
-	width: 100%;
-
-	.social-icons {
-		display: flex;
-		justify-content: center;
-		padding: .5em;
 
 
-		img {
-			margin: .5em;
+.content {
+	
+	.hero-wrap {
+		width: 100%;
+		.name-wrap {
+			border: 1px solid red;
+			height: 30vh;
+
+			h1 {
+			
+				font-size: 2.5em;
+				margin: 20px;
+				text-align: left;
+				padding: 5px;
+			}
+	
+			p {
+				text-align: left;
+				font-size: 2em;
+				margin: 20px;
+			}
 		}
+	
 	}
-}
 
+}
