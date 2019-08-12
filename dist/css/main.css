@@ -57,22 +57,23 @@ table {
 }
 
 body {
-	background: #ccc;
+	background: #333B50;
 }
 
 header {
-	border: 1px solid blue;
+	height: 100px;
+	margin: auto;
+	background: #324158;
 }
 
 header img {
-	display: inline-block;
-	padding: 1em;
+	padding: 10px 0px;
 }
 
 header .hamburger {
 	float: right;
 	padding: 20px;
-	margin: 30px 0px;
+	margin: 15px 0px;
 	cursor: pointer;
 	z-index: 10;
 }
@@ -123,26 +124,105 @@ header ul {
 	display: none;
 }
 
+.content {
+	max-width: 1280px;
+	margin: auto;
+}
+
 .content .hero-wrap {
 	width: 100%;
+	height: 100vh;
+	background: #333B50;
+	position: relative;
 }
 
 .content .hero-wrap .name-wrap {
-	border: 1px solid red;
-	height: 30vh;
+	width: 85%;
+	margin: auto;
+}
+
+.content .hero-wrap .name-wrap .first-name {
+	margin-top: 50px;
+}
+
+.content .hero-wrap .name-wrap .last-name span {
+	color: green;
 }
 
 .content .hero-wrap .name-wrap h1 {
-	font-size: 2.5em;
-	margin: 20px;
+	font-size: 3em;
+	margin: 10px 0px;
 	text-align: left;
-	padding: 5px;
+	font-family: "Lexend Deca", sans-serif;
 }
 
 .content .hero-wrap .name-wrap p {
 	text-align: left;
 	font-size: 2em;
-	margin: 20px;
+	font-family: "Lexend Deca", sans-serif;
+	margin: 10px 0px;
+}
+
+.content .hero-wrap .blurb-wrap {
+	position: sticky;
+	width: 85%;
+	margin: auto;
+	top: 76.5%;
+	left: 0;
+	border: 1px solid black;
+	text-align: center;
+	padding: 20px;
+	font-family: "Noto Sans KR", sans-serif;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.content .hero-wrap .blurb-wrap p {
+	margin-bottom: 20px;
+}
+
+.content .hero-wrap .blurb-wrap a {
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid green;
+	padding: 7px 15px;
+	font-size: .8em;
+}
+
+.content .hero-wrap .blurb-wrap a:hover {
+	background: green;
+}
+
+.content .skills-wrap {
+	border: 1px solid red;
+	width: 100%;
+}
+
+.content .skills-wrap h1 {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 25px;
+	font-family: "Lexend Deca", sans-serif;
+}
+
+.content .skills-wrap .skills-graph {
+	border: 1px solid green;
+	width: 85%;
+	margin: auto;
+}
+
+.content .skills-wrap .skills-graph p {
+	font-family: "Noto Sans KR", sans-serif;
+	font-size: 1.1em;
+	margin: 5px 0px 0px 0px;
+}
+
+.content .skills-wrap .skills-graph .html-bar, .content .skills-wrap .skills-graph .js-bar {
+	width: 0%;
+	height: 15px;
+	background: green;
+	color: green;
+	font-family: "Noto Sans KR", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
