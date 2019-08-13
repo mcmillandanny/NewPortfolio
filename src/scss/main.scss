@@ -155,22 +155,23 @@ header {
 			h1 {
 				text-align: center;
 				font-size: 2em;
-				margin-top: 25px;
+				margin-top: 40px;
 				font-family: $Lex-End;
 			}
 
 		.skills-graph {
 			border: 1px solid green;
 			width: 85%;
-			margin: auto;
+			margin: 20px auto;
 
 			p {
 				font-family: $noto-sans;
 				font-size: 1.1em;
-				margin: 5px 0px 0px 0px;
+				margin: 10px 0px 5px 0px;
+				color: #fff;
 			}
 			
-			.html-bar, .js-bar {
+			.html-bar, .js-bar, .react-bar, .wordpress-bar, .vue-bar, .git-bar {
 				width: 0%;
 				height: 15px;
 				background: green;
@@ -181,7 +182,90 @@ header {
 		}
 	}
 
+	.portfolio {
+		border: 1px solid orange;
+		width: 100%;
 
+		h1 {
+			text-align: center;
+			font-size: 3em;
+			font-family: $Lex-End;
+			margin-top: 40px;
+		}
 
+		.seeMore-btn {
+			text-align: center;
+			padding: 5px;
+			margin-bottom: 50px;
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 1.9em;
+			}
+		}
 
+		.portfolio-images img {
+			display: block;
+			margin: auto;
+		}	
+	}
+
+	.contact-wrapper {
+		width: 100%;
+		border: 1px solid red;
+
+		.contact-me {
+			width: 85%;
+			margin: auto;
+
+			h1 {
+				text-align: center;
+				font-size: 3em;
+				font-family: $Lex-End;
+				margin-top: 40px;
+				margin-bottom: 20px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: .9em;
+			}
+
+			p {
+				padding: 5px;
+			}
+		}
+
+		.social-icons {
+			margin: auto;
+			display: block;
+			text-align: center;
+			margin: 20px 0px;
+			padding: 5px 5px;
+
+			img {
+				margin: 10px;
+			}
+		}
+	}
+
+	.footer-wrap {
+		width: 100%;
+
+		img, p {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		img {
+			padding: 10px;
+		}
+
+		p {
+			float: right;
+			padding: 20px 25px;
+
+		}
+	}
 }

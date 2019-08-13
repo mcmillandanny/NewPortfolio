@@ -201,28 +201,116 @@ header ul {
 .content .skills-wrap h1 {
 	text-align: center;
 	font-size: 2em;
-	margin-top: 25px;
+	margin-top: 40px;
 	font-family: "Lexend Deca", sans-serif;
 }
 
 .content .skills-wrap .skills-graph {
 	border: 1px solid green;
 	width: 85%;
-	margin: auto;
+	margin: 20px auto;
 }
 
 .content .skills-wrap .skills-graph p {
 	font-family: "Noto Sans KR", sans-serif;
 	font-size: 1.1em;
-	margin: 5px 0px 0px 0px;
+	margin: 10px 0px 5px 0px;
+	color: #fff;
 }
 
-.content .skills-wrap .skills-graph .html-bar, .content .skills-wrap .skills-graph .js-bar {
+.content .skills-wrap .skills-graph .html-bar, .content .skills-wrap .skills-graph .js-bar, .content .skills-wrap .skills-graph .react-bar, .content .skills-wrap .skills-graph .wordpress-bar, .content .skills-wrap .skills-graph .vue-bar, .content .skills-wrap .skills-graph .git-bar {
 	width: 0%;
 	height: 15px;
 	background: green;
 	color: green;
 	font-family: "Noto Sans KR", sans-serif;
+}
+
+.content .portfolio {
+	border: 1px solid orange;
+	width: 100%;
+}
+
+.content .portfolio h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: "Lexend Deca", sans-serif;
+	margin-top: 40px;
+}
+
+.content .portfolio .seeMore-btn {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 50px;
+}
+
+.content .portfolio .seeMore-btn a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.9em;
+}
+
+.content .portfolio .portfolio-images img {
+	display: block;
+	margin: auto;
+}
+
+.content .contact-wrapper {
+	width: 100%;
+	border: 1px solid red;
+}
+
+.content .contact-wrapper .contact-me {
+	width: 85%;
+	margin: auto;
+}
+
+.content .contact-wrapper .contact-me h1 {
+	text-align: center;
+	font-size: 3em;
+	font-family: "Lexend Deca", sans-serif;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.content .contact-wrapper .contact-me a {
+	text-decoration: none;
+	color: #fff;
+	font-size: .9em;
+}
+
+.content .contact-wrapper .contact-me p {
+	padding: 5px;
+}
+
+.content .contact-wrapper .social-icons {
+	margin: auto;
+	display: block;
+	text-align: center;
+	margin: 20px 0px;
+	padding: 5px 5px;
+}
+
+.content .contact-wrapper .social-icons img {
+	margin: 10px;
+}
+
+.content .footer-wrap {
+	width: 100%;
+}
+
+.content .footer-wrap img, .content .footer-wrap p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.content .footer-wrap img {
+	padding: 10px;
+}
+
+.content .footer-wrap p {
+	float: right;
+	padding: 20px 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
